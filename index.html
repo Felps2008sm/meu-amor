@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosso 1 Ano ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+header {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header h1 {
+    color: #e50914;
+}
+
+.banner {
+    height: 100vh;
+    background: url('foto1.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.banner-content {
+    max-width: 500px;
+}
+
+.banner h2 {
+    font-size: 40px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+button {
+    background: #e50914;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.gallery img {
+    width: 200px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Nosso Amor ❤️</h1>
+</header>
+
+<div class="banner">
+    <div class="banner-content">
+        <h2>1 Ano com Você</h2>
+        <p>
+        Hoje a gente completa 1 ano juntos… e eu nem sei por onde começar pra descrever o quanto você é importante pra mim ❤️
+        <br><br>
+        Esse tempo ao seu lado foi cheio de momentos incríveis, risadas, aprendizados e muito amor.
+        <br><br>
+        Eu te amo muito ❤️
+        </p>
+        <button onclick="playMusic()">▶ Tocar Música</button>
+    </div>
+</div>
+
+<section>
+    <h2>Nossos Momentos</h2>
+    <div class="gallery">
+        <img src="imagen/1000004462.jpg">
+        <img src="imagen/1000015615.jpg">
+        <img src="imagen/1000016706.jpg">
+        <img src="imagen/1000033420.jpg">
+    </div>
+</section>
+
+<footer>
+    Feito com ❤️ por você
+</footer>
+
+<audio id="music" src="musica/Hungria - Amor e Fé (Official Music Video) _CheiroDoMato(M4A_128K).m4a"></audio>
+
+<script>
+function playMusic() {
+    const music = document.getElementById('music');
+    music.play();
+}
+</script>
+
+</body>
+</html>
